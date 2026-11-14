@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <!-- Diagonal Royal Blue to Midnight Gradient -->
+    <linearGradient id="aqarBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#26478D" />
+      <stop offset="52%" stop-color="#172A57" />
+      <stop offset="100%" stop-color="#0A0E1A" />
+    </linearGradient>
+
+    <!-- Soft Golden & Sky Blue Halo Behind Emblem -->
+    <radialGradient id="aqarHalo" cx="50%" cy="48%" r="42%">
+      <stop offset="0%" stop-color="#FBBF24" stop-opacity="0.28" />
+      <stop offset="48%" stop-color="#60A5FA" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#0A0E1A" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Glass Morphism Specular Sheen -->
+    <linearGradient id="aqarGlassSheen" x1="15%" y1="5%" x2="85%" y2="95%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.24" />
+      <stop offset="35%" stop-color="#FFFFFF" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.25" />
+    </linearGradient>
+
+    <!-- Brushed Silver & Pure White Metallic Foreground Gradient -->
+    <linearGradient id="aqarMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="58%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#97A5BA" />
+    </linearGradient>
+
+    <!-- Subtle Gold Accent Gradient -->
+    <linearGradient id="aqarGoldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+
+    <filter id="aqarEmblemShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#040711" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Base -->
+  <rect x="24" y="24" width="976" height="976" rx="224" fill="url(#aqarBgGrad)" />
+  <rect x="24" y="24" width="976" height="976" rx="224" fill="url(#aqarHalo)" />
+
+  <!-- Subtle Glass Inner Plate -->
+  <rect x="64" y="64" width="896" height="896" rx="192" fill="none" stroke="url(#aqarGlassSheen)" stroke-width="4" />
+
+  <!-- Architectural Digital Grid Lines (Subtle Depth) -->
+  <g opacity="0.14" stroke="#97A5BA" stroke-width="2">
+    <line x1="140" y1="740" x2="884" y2="740" />
+    <line x1="220" y1="240" x2="220" y2="780" />
+    <line x1="804" y1="240" x2="804" y2="780" />
+  </g>
+
+  <!-- Foreground Architectural + A+ Geometric Emblem -->
+  <g filter="url(#aqarEmblemShadow)">
+    <!-- Left Tower Silhouette -->
+    <path d="M276 680 V386 L382 318 V680 H276 Z" fill="url(#aqarMetal)" opacity="0.32" />
+    <!-- Central Tall Skyscraper Wing -->
+    <path d="M396 680 V248 L512 174 V680 H396 Z" fill="url(#aqarMetal)" opacity="0.58" />
+    <!-- Right Tower Wing with Architectural Windows -->
+    <path d="M512 174 L636 254 V680 H512 V174 Z" fill="url(#aqarMetal)" opacity="0.92" />
+    <rect x="546" y="276" width="26" height="36" rx="5" fill="#172A57" opacity="0.78" />
+    <rect x="586" y="300" width="24" height="34" rx="5" fill="#172A57" opacity="0.78" />
+    <rect x="546" y="336" width="26" height="36" rx="5" fill="#172A57" opacity="0.78" />
+    <rect x="586" y="360" width="24" height="34" rx="5" fill="#172A57" opacity="0.78" />
+
+    <!-- Stylized Geometric 'A' Roofline / Shield Arch in Crisp Metallic White -->
+    <path d="M472 364 H548 L692 732 H598 L566 644 H454 L422 732 H328 L472 364 Z M476 574 H544 L510 470 L476 574 Z" fill="url(#aqarMetal)" />
+
+    <!-- Plus Sign (+) Growth & Technology Symbol -->
+    <path d="M718 424 H766 V478 H820 V526 H766 V580 H718 V526 H664 V478 H718 V424 Z" fill="url(#aqarGoldAccent)" />
+  </g>
+
+  <!-- Crisp Glass Top Specular Rim -->
+  <rect x="26" y="26" width="972" height="972" rx="222" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="3" />
+</svg>

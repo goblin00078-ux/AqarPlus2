@@ -1,0 +1,6 @@
+{
+  "name": "AqarPlus – نظام إدارة الأملاك والعقارات",
+  "description": "منظومة مركزية متكاملة لإدارة الأملاك والعقارات والتأجير والتحصيل والمحاسبة والصيانة والمهام وفريق العمل متعدد الأجهزة.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
